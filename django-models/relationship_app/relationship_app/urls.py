@@ -21,5 +21,6 @@ urlpatterns = [
     path('logout/', views.logout_view, name='logout'),
     
     # Add other URL patterns here, such as for books, libraries, etc.
-    LogoutView.as_view(template_name=", "LoginView.as_view(template_name=
+    path"LogoutView.as_view(template_name=", "LoginView.as_view(template_name="
+
 ]
