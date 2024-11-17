@@ -18,6 +18,7 @@ def list_books(request):
     return render(request, 'list_books.html', {'books': books})
 
 ["relationship_app/list_books.html"]
+["relationship_app/library_detail.html", "from .models import Library"]
 # Class-based view to display details for a specific library
 class LibraryDetailView(DetailView):
     model = Library
