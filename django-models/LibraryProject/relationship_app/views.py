@@ -17,7 +17,7 @@ def list_books(request):
     books = Book.objects.all()
     return render(request, 'list_books.html', {'books': books})
 
-
+["relationship_app/list_books.html"]
 # Class-based view to display details for a specific library
 class LibraryDetailView(DetailView):
     model = Library
