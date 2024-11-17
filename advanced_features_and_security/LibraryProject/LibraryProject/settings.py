@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 ["bookshelf.CustomUser"]
 ["SECURE_SSL_REDIRECT"]
 ["SECURE_HSTS_SECONDS", "31536000"]
+["SECURE_HSTS_INCLUDE_SUBDOMAINS"]
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
