@@ -14,6 +14,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 ["SECURE_SSL_REDIRECT"]
 ["SECURE_HSTS_SECONDS", "31536000"]
 ["SECURE_HSTS_INCLUDE_SUBDOMAINS"]
+["SECURE_PROXY_SSL_HEADER", "HTTP_X_FORWARDED_PROTO"]
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
