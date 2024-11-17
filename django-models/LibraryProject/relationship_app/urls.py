@@ -20,4 +20,5 @@ urlpatterns = [
     
  [LibraryProject/relationship_app/urls.py doesn't contain: ["add_book/", "edit_book/"]
     ["LogoutView.as_view(template_name=", "LoginView.as_view(template_name="]
+   ["from .views import list_books"]
 ]
