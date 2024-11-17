@@ -9,3 +9,4 @@ class Book(models.Model):
         return self.title
 ["class CustomUser(AbstractUser):", "date_of_birth", "profile_photo"]
 ["class CustomUserManager(BaseUserManager):", "create_user", "create_superuser"]
+["can_create", "can_delete"]
