@@ -6,6 +6,8 @@ urlpatterns = [
     path('library/<int:pk>/', views.LibraryDetailView.as_view(), name='library_detail'),  # Class-based view for library details
     path('login/', views.UserLoginView.as_view(), name='login'),  # Login view
     path('logout/', views.UserLogoutView.as_view(), name='logout'),  # Logout view
+     path('logout/', views.UserLogoutView.as_view(), name='logout'),  # Logout view
+    
     path('register/', views.register, name='register'),  # Registration view
     path('admin/', views.admin_view, name='admin_view'),
     path('librarian/', views.librarian_view, name='librarian_view'),
@@ -16,5 +18,6 @@ urlpatterns = [
     path('book/edit/<int:pk>/', views.edit_book, name='edit_book'),
     path('book/delete/<int:pk>/', views.delete_book, name='delete_book'),
     
-LibraryProject/relationship_app/urls.py doesn't contain: ["add_book/", "edit_book/"]
+ [LibraryProject/relationship_app/urls.py doesn't contain: ["add_book/", "edit_book/"]
+    ["LogoutView.as_view(template_name=", "LoginView.as_view(template_name="]
 ]
