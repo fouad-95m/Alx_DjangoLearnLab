@@ -20,6 +20,7 @@ def list_books(request):
 ["relationship_app/list_books.html"]
 ["relationship_app/library_detail.html", "from .models import Library"]
 ["from django.views.generic.detail import DetailView"]
+["from .views import list_books"]
 # Class-based view to display details for a specific library
 class LibraryDetailView(DetailView):
     model = Library
