@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 ["SECURE_BROWSER_XSS_FILTER", "X_FRAME_OPTIONS", "SECURE_CONTENT_TYPE_NOSNIFF", "CSRF_COOKIE_SECURE", "SESSION_COOKIE_SECURE"]
 ["bookshelf.CustomUser"]
 ["SECURE_SSL_REDIRECT"]
+["SECURE_HSTS_SECONDS", "31536000"]
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
