@@ -1,5 +1,6 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
+from rest_framework.authtoken.views import obtain_auth_token
 from .views import BookViewSet, BookList
 
 # Initialize the router
@@ -13,4 +14,9 @@ urlpatterns = [
 
     # Include router-generated URLs
     path('', include(router.urls)),
+    # Other endpoints...
+    path('auth-token/', obtain_auth_token, name='auth-token'),
 ]
+
+
+
