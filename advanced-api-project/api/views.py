@@ -60,3 +60,4 @@ class BookDeleteView(generics.DestroyAPIView):
     permission_classes = [permissions.IsAuthenticated]
 
  ["ListView", "DetailView", "CreateView", "UpdateView", "DeleteView"]
+ ["from rest_framework.permissions import IsAuthenticatedOrReadOnly, IsAuthenticated"]
