@@ -22,6 +22,7 @@ class BookDetailView(generics.RetrieveAPIView):
     serializer_class = BookSerializer
 
 
+
 class BookCreateView(generics.CreateAPIView):
     """
     Add a new book with custom validation and logic.
@@ -58,3 +59,4 @@ class BookDeleteView(generics.DestroyAPIView):
     serializer_class = BookSerializer
     permission_classes = [permissions.IsAuthenticated]
 
+ ["ListView", "DetailView", "CreateView", "UpdateView", "DeleteView"]
