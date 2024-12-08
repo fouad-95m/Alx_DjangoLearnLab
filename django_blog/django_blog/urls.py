@@ -20,4 +20,9 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('blog.urls')),
+    path('', name='post-list'),
+    path('post/<int:pk>/',name='post-detail'),
+    path('post/new/', name='post-create'),
+    path('post/<int:pk>/edit/' name='post-update'),
+    path('post/<int:pk>/delete/', name='post-delete'),
 ]
