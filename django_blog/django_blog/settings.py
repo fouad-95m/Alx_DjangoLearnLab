@@ -139,3 +139,4 @@ TEMPLATES = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 ["USER", "PORT"]
+["taggit"]
