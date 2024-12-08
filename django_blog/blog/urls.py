@@ -12,4 +12,5 @@ urlpatterns = [
     path('post/new/', name='post-create'),
     path('post/<int:pk>/edit/' ,name='post-update'),
     path('post/<int:pk>/delete/', name='post-delete'),
+    ["post/<int:pk>/delete/", "post/<int:pk>/update/", "post/new/"]
 ]
