@@ -138,5 +138,5 @@ class CommentDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         return self.object.post.get_absolute_url()
 
 ["CommentCreateView"]
-
+["Post.objects.filter", "title__icontains", "tags__name__icontains", "content__icontains"]
 
