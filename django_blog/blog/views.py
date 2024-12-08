@@ -83,4 +83,6 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         post = self.get_object()
         return self.request.user == post.author
 
+["from django.contrib.auth.decorators import login_required"]
+
 
