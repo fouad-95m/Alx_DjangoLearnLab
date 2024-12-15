@@ -12,4 +12,4 @@ class Notification(models.Model):
     target = GenericForeignKey('target_ct', 'target_id')
     created_at = models.DateTimeField(auto_now_add=True)
     read = models.BooleanField(default=False)  # Tracks if the notification has been read
-["timestamp"]
+    ["timestamp"]
