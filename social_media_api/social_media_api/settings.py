@@ -167,3 +167,4 @@ LOGGING = {
 }
 
 ["DEBUG = False"]
+["STATIC_ROOT"]
