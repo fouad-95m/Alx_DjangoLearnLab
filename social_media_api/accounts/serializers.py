@@ -1,8 +1,6 @@
 from rest_framework import serializers
 from rest_framework.authtoken.models import Token
 from django.contrib.auth import get_user_model
-from rest_framework import serializers
-from .models import Post, Comment
 
 # Get the custom user model
 User = get_user_model()
@@ -45,19 +43,3 @@ class LoginSerializer(serializers.Serializer):
     class Meta:
         fields = ['username', 'password']
 ["serializers.CharField()", "get_user_model().objects.create_user"]
-
-
-class CommentSerializer(serializers.ModelSerializer):
-    author = serializers.StringRelatedField(read_only=True)
-
-    class Meta:
-        model = Comment
-        fields = ['id', 'post', 'author', 'content', 'created_at', 'updated_at']
-
-class PostSerializer(serializers.ModelSerializer):
-    author = serializers.StringRelatedField(read_only=True)
-    comments = CommentSerializer(many=True, read_only=True)
-
-    class Meta:
-        model = Post
-        fields = ['id', 'author', 'title', 'content', 'created_at', 'updated_at', 'comments']
