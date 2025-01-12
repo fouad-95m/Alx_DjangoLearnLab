@@ -21,3 +21,26 @@ The **E-commerce API** is a backend application built using **Django** and **Dja
 - **JWT Authentication**: Used for secure user authentication.
 - **Django Filters**: Allows filtering and searching of product data.
 - **SQLite**: The default database used in development (can be configured for other databases like PostgreSQL).
+
+API Endpoints
+User Authentication
+POST /api/auth/register/ – Register a new user.
+POST /api/auth/login/ – Log in and receive a JWT token.
+Products
+GET /api/products/ – List all products.
+POST /api/products/ – Create a new product (Admin only).
+GET /api/products/{id}/ – Retrieve a product by its ID.
+PUT /api/products/{id}/ – Update a product (Admin only).
+DELETE /api/products/{id}/ – Delete a product (Admin only).
+Categories
+GET /api/categories/ – List all categories.
+POST /api/categories/ – Create a new category (Admin only).
+GET /api/categories/{id}/ – Retrieve a category by its ID.
+PUT /api/categories/{id}/ – Update a category (Admin only).
+DELETE /api/categories/{id}/ – Delete a category (Admin only).
+Reviews
+GET /api/reviews/ – List all reviews.
+POST /api/reviews/ – Create a review for a product (Authenticated users only).
+GET /api/reviews/{id}/ – Retrieve a specific review by its ID.
+PUT /api/reviews/{id}/ – Update a review (Only the owner can update).
+DELETE /api/reviews/{id}/ – Delete a review (Only the owner can delete).
